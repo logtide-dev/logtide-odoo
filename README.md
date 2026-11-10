@@ -2,7 +2,7 @@
 
 Forwards Odoo server logs to [LogTide](https://logtide.dev) using the official [`logtide-sdk`](https://pypi.org/project/logtide-sdk/) Python SDK.
 
-- This branch targets Odoo 17.0. Each Odoo series has its own branch: 17.0, 18.0, 19.0, 20.0.
+- This branch targets Odoo 18.0. Each Odoo series has its own branch: 17.0, 18.0, 19.0, 20.0.
 - Safe with prefork workers (`workers > 0`), cron workers and the gevent longpolling process: each process owns its own client, and buffered logs are flushed when a worker exits or is recycled.
 - Every record carries Odoo context: database, user, process, HTTP request, JSON-RPC model and method, cron job name, and the incoming W3C `traceparent` trace id.
 - Optional forwarding of `ir.logging` rows.
