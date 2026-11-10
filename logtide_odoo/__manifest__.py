@@ -1,0 +1,16 @@
+{
+    "name": "LogTide",
+    "version": "17.0.1.0.0",
+    "category": "Tools",
+    "summary": "Forward Odoo server logs to LogTide",
+    "description": "Forwards Odoo server logs to LogTide using the official logtide-sdk Python SDK.",
+    "author": "LogTide",
+    "website": "https://logtide.dev",
+    "license": "Other OSI approved licence",
+    "depends": ["base", "web"],
+    "external_dependencies": {"python": ["logtide_sdk"]},
+    "post_load": "post_load",
+    "auto_install": False,
+    "application": False,
+    "installable": True,
+}
